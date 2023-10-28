@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale="1.0">
+	<meta name="author" content="Akanksh,Vivek,Mehak">
+	<meta name="description" content="cutie website :>">
+	 <!-- <meta http-equiv="refresh" content="30"> refreshing the site every 30 seconds? -->
+	<base target="_blank">
+    <title>Pets</title>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link href="pet home.css" rel="stylesheet"/>
+  <link rel="icon" type="image/x-icon" href="https://www.vhv.rs/dpng/d/26-260846_dog-paw-icon-png-transparent-png.png">
+  <script src="pet home.js"></script>
+</head>
+    <body>
+		<main>
+		
+		<h1><header>Paw Care</header></h1>
+		<section>
+			<div id = "title">
+			<h2><u>Welcome to paws!</u></h2>
+			</div>
+			<div class="logo">
+			<img src="https://i.pinimg.com/originals/d8/87/be/d887be5617fedb3a35dc8841ca989f86.gif" width="100" height="100">
+			</div>
+			<div class="intro">
+			<h3>Your one pit stop for </h3>
+			<h3>all your pet needs</h3>
+			</div>
+			<div id="good-boy">
+			<b>Answer the following question so we know how to best serve you :D</b>
+			</div>
+			<div class="q1">
+			<p id="test">Dog person or a cat person?</p>
+			</div>
+			
+			<div class="card" id="soundbutton">
+			<h2><a href="#two" target="_self">Cats</a></h2>
+				<div class="imgbox" >
+				</div>
+				<div class="content">
+					<p>They might not be loyal like dogs but they were worshipped once for a reason!</p>
+					<audio controls id="meow" preload="auto">
+						<source src="https://dl.sndup.net/nr9f/cat-meow-14536.mp3">
+					</audio>
+				</div>
+			<script>
+				const soundbutton = document.getElementById("soundbutton");
+				const meow = document.getElementById("meow");
+				soundbutton.addEventListener("mouseover", () => {
+					meow.play();
+				}false);
+				soundbutton.addEventListener("mouseleave", () => {
+					meow.pause();
+					meow.currentTime = 0;
+				}false);
+			</script>
+			</div>
+				<div class="card2">
+				<h2><a href="dog.html" target="_blank">Dogs</h2></a>
+				<div class="imgbox2">
+				</div>
+				<div class="content2">
+					<p>Loyal companions that treat you like God</p>
+				</div>
+			</div>
+			</form>
+			<button type="button" onclick="myFunction()">Try it</button>
+		</section>
+		</main>
+
+	</body>
+</html>

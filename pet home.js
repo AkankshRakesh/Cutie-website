@@ -1,2 +1,2 @@
-function myFunction(){document.getElementById("test").innerHTML = "Kill";
+function myFunction(){document.getElementById("test").innerHTML = "Kill me pls";
 }

@@ -1,73 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale="1.0">
-	<meta name="author" content="Akanksh,Vivek,Mehak">
-	<meta name="description" content="cutie website :>">
-	 <!-- <meta http-equiv="refresh" content="30"> refreshing the site every 30 seconds? -->
-	<base target="_blank">
-    <title>Pets</title>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <link href="pet home.css" rel="stylesheet"/>
-  <link rel="icon" type="image/x-icon" href="https://www.vhv.rs/dpng/d/26-260846_dog-paw-icon-png-transparent-png.png">
-  <script src="pet home.js"></script>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="author" content="Akanksh,Vivek,Mehak">
+<meta name="description" content="website :>">
+ <title>Pet Sitter Website</title>
+ <link rel="stylesheet" href="pets.css">
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+  <link rel="icon" type="image/x-icon" href="https://static-00.iconduck.com/assets.00/apps-paw-icon-256x256-xw6ugm2m.png">
 </head>
-    <body>
-		<main>
-		
-		<h1><header>Paw Care</header></h1>
-		<section>
-			<div id = "title">
-			<h2><u>Welcome to paws!</u></h2>
-			</div>
-			<div class="logo">
-			<img src="https://i.pinimg.com/originals/d8/87/be/d887be5617fedb3a35dc8841ca989f86.gif" width="100" height="100">
-			</div>
-			<div class="intro">
-			<h3>Your one pit stop for </h3>
-			<h3>all your pet needs</h3>
-			</div>
-			<div id="good-boy">
-			<b>Answer the following question so we know how to best serve you :D</b>
-			</div>
-			<div class="q1">
-			<p id="test">Dog person or a cat person?</p>
-			</div>
-			
-			<div class="card" id="soundbutton">
-			<h2><a href="#two" target="_self">Cats</a></h2>
-				<div class="imgbox" >
-				</div>
-				<div class="content">
-					<p>They might not be loyal like dogs but they were worshipped once for a reason!</p>
-					<audio controls id="meow" preload="auto">
-						<source src="https://dl.sndup.net/nr9f/cat-meow-14536.mp3">
-					</audio>
-				</div>
-			<script>
-				const soundbutton = document.getElementById("soundbutton");
-				const meow = document.getElementById("meow");
-				soundbutton.addEventListener("mouseover", () => {
-					meow.play();
-				}false);
-				soundbutton.addEventListener("mouseleave", () => {
-					meow.pause();
-					meow.currentTime = 0;
-				}false);
-			</script>
-			</div>
-				<div class="card2">
-				<h2><a href="dog.html" target="_blank">Dogs</h2></a>
-				<div class="imgbox2">
-				</div>
-				<div class="content2">
-					<p>Loyal companions that treat you like God</p>
-				</div>
-			</div>
-			</form>
-			<button type="button" onclick="myFunction()">Try it</button>
-		</section>
-		</main>
+<body>
+<div class="header">
+<header>
+<a class="logo"></a> 
+    <nav>
+      <ul>
+        <li><a href="#home" class="underline">Home</a></li>
+        <li><a href="#Aboutus" class="underline">About us</a></li>
+        <li><a href="#footer" class="underline">Contact</a></li>
+        <li><a href="#" class="underline">Register</a></li>
+      </ul>
+    </nav>
+	
+ </header>
+</div>	
 
-	</body>
+ <main>
+    <section id="home">
+	<div class="text-wrapper" style="background: url('https://urbanhounds.com/wp-content/uploads/WelcometotheUrbanHound.jpg');">
+	<div class="text">
+	<h1><span style="color:#e8872f;">Paw</span><span style="color:#686868;">Care</span></h1>
+	</div>
+     </div> 
+    </section>
+
+    <section id="Aboutus">
+      <h2 style="color:#e8872f">WELCOME TO PAW CARE</h2>
+	  <p>Paw Care is a premier full-service dog and cat care facility. We offer daycare, boarding, walking, grooming, and training. With certified trainers on staff and 24-hour supervised care 365 days a year, you know your furry friend is always in a safe and in a loving environment.</p>
+	<p><a href="/register">Become an Paw Carian</a> today, and see what all the WOOF is about!<br></p>
+	</section>
+
+    <section id="Aboutus2">
+		<h2 style="color:#e8872f"> Some of our happy customers </h2>
+		<img class="mySlides" src="https://images.prismic.io/trustedhousesitters/efd02b0e-6375-4a66-ae11-8860b52f628b_dog+hiking+gear.png?auto=compress,format&rect=0,0,1920,800&w=960&h=400">
+		<img class="mySlides" src = "https://images.prismic.io/trustedhousesitters/f4af67cd-e27b-4c53-8cea-0ec603f9f560_Cats+choose+favorite+person.png?auto=compress,format&rect=0,0,1920,800&w=960&h=400">
+		<img class="mySlides" src="https://images.prismic.io/trustedhousesitters/2039e63f-9b34-4b32-bd18-08d6b4cb9c29_how+to+hold+a+cat+still+for+medicine.png?auto=compress,format&rect=0,0,1920,800&w=960&h=400">
+		<img class="mySlides" src="https://images.prismic.io/trustedhousesitters/88bed859-a8a2-4d27-a25f-79888b4001ac_babysit+dog.jpg?auto=compress,format&rect=0,0,1920,800&w=960&h=400">
+		<img class="mySlides" src="https://images.prismic.io/trustedhousesitters/b1270756-eebb-4144-9b1a-4ca2e20526ac_how+to+prepare+your+pets+for+a+hurricane.png?auto=compress,format&rect=0,0,1920,800&w=960&h=400">
+		<img class="mySlides" src="https://images.prismic.io/trustedhousesitters/8facb860-e37b-43d3-b73e-719f65180c65_cat+dna+test.png?auto=compress,format&rect=0,0,1920,800&w=960&h=400">
+	
+	</section>
+	 <footer id="footer">
+        <div class="greet">
+			<p>Let's talk over a drink <br>shall we?</p>
+		<div class="footerlinks">
+			<span class="phonepic">
+				<img src="https://github.com/AkankshRakesh/Cutie-website/blob/main/phone-removebg-preview.png?raw=true" width="25px">
+			</span>
+			<span class="phonenumber" >
+				+91 9810283771
+			</span>
+			<span class="emailpic">
+				<img src="https://github.com/AkankshRakesh/Cutie-website/blob/main/email-removebg-preview%20(1).png?raw=true" width="25px"
+			</span>
+			<span class="emailadd">
+				pawcare@gmail.com
+			</span>
+		</div>
+		<div class="footericons">
+			<span class="instalogo">
+				<a href="#"><img src="https://github.com/AkankshRakesh/Cutie-website/blob/main/insta-removebg-preview.png?raw=true" width="30px"></a>
+			</span>
+			<span class="fblogo">
+				<a href="#"><img src="https://github.com/AkankshRakesh/Cutie-website/blob/main/fb-removebg-preview.png?raw=true" width="30px"></a>
+			</span>
+			<span class="twitterlogo">
+				<a href="#"><img src="https://github.com/AkankshRakesh/Cutie-website/blob/main/twitter-removebg-preview.png?raw=true" width="30px"></a>
+			</span>
+			<span class="linkdnlogo">
+				<a href="#"><img src="https://github.com/AkankshRakesh/Cutie-website/blob/main/linkdn-removebg-preview.png?raw=true" width="30px"></a>
+			</span>
+		</div>
+			<div class="footergroup">
+				<span class="privacy">
+					<a href="#">Privacy policy</a>
+				</span>
+				<span class="terms">
+					<a href="#">Terms of use</a>
+				</span>
+				<span class='joinus'>
+					<a href="#">Join Our Team</a>
+				</span>
+			</div>
+			<div class="ultimatefooter">
+			<span style="padding: 10px">&copy; 2023 Paw Care</span>
+			<span>All rights reserved</span>
+			</div>
+		</div>
+		
+    </footer>
+ </main>
+
+ <script src="pet.js"></script>
+
+</body>
 </html>

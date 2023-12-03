@@ -20,15 +20,16 @@ box-sizing: border-box;
 }
 .header:hover{
 	opacity: 1 !important; /* fuck important actually worked over js weeeeeeee */
+	transition: 0.3s;
 }
 nav {
 width: 130%;
 padding: 0;
 display: block;
 list-style-type: none;
-margin: 11px -30px;
+margin: 3px -30px;
 top: 0;
-
+font-family: cursive;
 float: right;
 position: fixed;
 }
@@ -96,18 +97,18 @@ height: 100%;
 
 #home{
 width: 100%;
-background-color: #F3EEEA;
-}
-#home img{
-
+position: relative;
+background-color: #eee !important;
 }
 .text-wrapper{
+
 margin: 0 auto;
 padding: 10%;
 height: auto;
 background-size: cover !important;
 }
 .text{
+
 width: 50%;
 margin: 0 0 0 auto;
 text-align: right;
